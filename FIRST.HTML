@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's Your | Student Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+        }
+
+        /* Top Navbar */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #bb86fc;
+        }
+
+        .nav-left a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        .nav-left a:hover {
+            color: #bb86fc;
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            margin-left: 15px;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            color: #bb86fc;
+            border: 1px solid #bb86fc;
+        }
+
+        .login-btn:hover {
+            background-color: rgba(187, 134, 252, 0.2);
+        }
+
+        .register-btn {
+            color: #ffffff;
+            background: linear-gradient(135deg, #7b2ff7, #bb86fc);
+        }
+
+        .register-btn:hover {
+            box-shadow: 0 6px 15px rgba(187, 134, 252, 0.5);
+        }
+
+        /* Layout */
+        .wrapper {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 230px;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 30px 20px;
+            box-shadow: 4px 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .sidebar h3 {
+            color: #bb86fc;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(187, 134, 252, 0.2);
+            color: #bb86fc;
+        }
+
+        /* Content */
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .content h1 {
+            color: #bb86fc;
+        }
+
+        .content p {
+            font-size: 17px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+        }
+
+        .card h3 {
+            color: #bb86fc;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        .card button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #7b2ff7, #bb86fc);
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            box-shadow: 0 6px 15px rgba(187, 134, 252, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Top Navbar -->
+<div class="top-nav">
+    <div class="logo">It's Your</div>
+
+    <div class="nav-left">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Mentors</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="http://127.0.0.1:5500/login%20page.html" class="login-btn">Login</a>
+        <a href="http://127.0.0.1:5500/rgister%20now.html" class="register-btn">Register Now</a>
+    </div>
+</div>
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Student Menu</h3>
+        <a href="#">Dashboard</a>
+        <a href="#">Find Mentor</a>
+        <a href="#">My Sessions</a>
+        <a href="#">Messages</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome, Student 👋</h1>
+        <p>
+            Connect with experienced mentors, book one-to-one sessions,
+            and get career guidance tailored for you.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Find a Mentor</h3>
+                <p>Browse mentors based on skills, experience, and domain.</p>
+                <button>Explore</button>
+            </div>
+
+            <div class="card">
+                <h3>My Sessions</h3>
+                <p>View upcoming sessions and track your progress.</p>
+                <button>View</button>
+            </div>
+
+            <div class="card">
+                <h3>Ask a Question</h3>
+                <p>Chat privately with mentors and clear your doubts.</p>
+                <button>Chat</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

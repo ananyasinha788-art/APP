@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentors Matched | It's Your</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+        }
+
+        /* Top Navbar */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #bb86fc;
+        }
+
+        .top-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        .top-nav a:hover {
+            color: #bb86fc;
+        }
+
+        /* Main Section */
+        .container {
+            padding: 40px;
+        }
+
+        .container h1 {
+            color: #bb86fc;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        /* Mentor Cards */
+        .mentor-cards {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .mentor-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(187, 134, 252, 0.25);
+        }
+
+        .mentor-card h3 {
+            color: #bb86fc;
+            margin-bottom: 8px;
+        }
+
+        .mentor-card p {
+            font-size: 14px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        .mentor-card span {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+            color: #d1c4e9;
+        }
+
+        .mentor-card button {
+            margin-top: 15px;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #7b2ff7, #bb86fc);
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .mentor-card button:hover {
+            box-shadow: 0 6px 15px rgba(187, 134, 252, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="top-nav">
+    <div class="logo">It's Your</div>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>Mentors Matched for You 🎯</h1>
+    <p>
+        Based on your interests and requirements, the following mentors
+        have been matched to guide you.
+    </p>
+
+    <div class="mentor-cards">
+
+        <!-- Mentor 1 -->
+        <div class="mentor-card">
+            <h3>Rakesh</h3>
+            <span>1st Year IIT Student</span>
+            <p>
+                Currently studying at IIT, Rakesh can guide you on
+                academic transition, study techniques, and competitive exam mindset.
+            </p>
+            <button>Connect</button>
+        </div>
+
+        <!-- Mentor 2 -->
+        <div class="mentor-card">
+            <h3>Isha</h3>
+            <span>4th Year IIT Student</span>
+            <p>
+                With strong experience in academics and internships,
+                Isha can mentor you on career planning, projects, and placements.
+            </p>
+            <button>Connect</button>
+        </div>
+
+        <!-- Mentor 3 -->
+        <div class="mentor-card">
+            <h3>Alok</h3>
+            <span>Graduate (Passed Out)</span>
+            <p>
+                Alok is a graduate with real-world exposure and can help
+                you with career decisions, higher studies, and industry guidance.
+            </p>
+            <button>Connect</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
